@@ -1,0 +1,22 @@
+### TEST GET / WEBSITE
+GET http://localhost:8008
+
+
+### TEST GET / Dashboard WEBSITE
+GET http://localhost:8008/dashboard
+
+
+### DATA ENDPOINT
+GET http://localhost:8008/api/data
+
+### DATA ENDPOINT FOR ADDING USER
+POST http://localhost:8008/api/data
+Content-Type: application/json
+
+{
+    "name": "Gilgamesh"
+}
+
+### DELETE ENDPOINT
+
+DELETE http://localhost:8008/api/data
