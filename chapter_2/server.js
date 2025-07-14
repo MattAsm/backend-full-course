@@ -30,7 +30,7 @@ app.get('/dashboard', (req, res) => {
         `);
 });
 
-// Type 2 - API endpoints
+// Type 2 - API endpoints 
 
 app.get('/api/data', (req, res) => {
     console.log("This is for data");
