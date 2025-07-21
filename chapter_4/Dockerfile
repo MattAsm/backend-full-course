@@ -13,8 +13,12 @@ RUN npm install
 #   Copy rest of application
 COPY . .
 
+# After installing dependencies in Dockerfile
+RUN npx prisma generate
+
 #   Expose the port that app runs on
 EXPOSE 5000
 
 #   Define command to run application
-CMD [ "node", "./src/server.js" ]
+#CMD [ "node", "./src/server.js" ]
+CMD ["npm", "start"]
